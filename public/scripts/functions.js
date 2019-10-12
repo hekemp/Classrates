@@ -1,7 +1,7 @@
 function submitComment(commentControl) {
     var comments = document.getElementsByName(commentControl)[0].value;
-    var subscriptionKey = "TEXT_ANALYTICS_API_KEY";
-    var url = "TEXT_ANALYTICS_ENDPOINT/sentiment";
+    var subscriptionKey = "[SUBSCRIPTION_KEY]";
+    var url = "[ENDPOINT_URL_HERE]/text/analytics/v2.1/sentiment";
 
     var payload = '{ "documents": [ { "language": "en-US", "id": "1", "text": "' + comments + '" }]}';
 
